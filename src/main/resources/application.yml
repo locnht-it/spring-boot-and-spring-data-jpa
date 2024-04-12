@@ -1,0 +1,21 @@
+#spring.profiles.active=test, dev, custom -- run the last order profile
+
+#my.custom.property=Locnht
+#my.custom.property.int=123
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/springbootandspringdatajpa
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
